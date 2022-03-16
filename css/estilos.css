@@ -57,6 +57,7 @@
 
 .imgFondoC img {
     width: 100%;
+    height: 700px;    
 }
 
 .imgMobile1 {
@@ -220,9 +221,62 @@ section .bderecha, .bizquierda{
     width: 600px;
     padding: 50px;
     margin: auto;
-}    
+} 
 
-/*Formulario*/
+/*Seccion de Galeria*/
+
+.galeriaIntro {
+    display:flex ;
+    flex-direction: row;
+    border-radius: 12px;
+}
+
+.galeriaIntro .card img{
+    height:100%;
+    width:100%; 
+}
+
+.galeriaIntro .card{
+    background-color: rgb(0, 0, 0, 1);
+    color: white;
+
+}
+
+.btn-primary {
+    background-color: white;
+    color:black;
+    border-color: black;
+}
+
+.btn-primary:hover {
+    background-color: red;
+    color: white;
+}
+
+/*Seccion "Comentarios de los clientes" en preguntas.html*/
+
+.h2Coment {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.card img{
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    margin-top: 20px
+}
+
+.col-md-4 .card {
+    margin-top: 30px;
+    border-radius: 7px;
+    border-color: black;
+    color: white;
+    background-color: black;
+}
+
+
+/*Formulario en contactos.html*/
 
 .contactanos {
     margin-bottom: 20px;
@@ -270,6 +324,41 @@ textarea {
     font-size: 30px;
     font-family: 'quintessential','arial narrow';
     }
+
+
+/*"Descarga nuestros cupones" en contactos.html*/
+
+.marginD {
+    margin-bottom: 40px;
+}
+
+#accordionFlushExample {
+    width: 60%;
+    margin: auto;
+}
+
+.accordion-item {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 10px;
+    
+}
+
+.accordion-header button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border-color: black;
+    
+}
+
+.accordion-body {
+    background-color: rgb(255, 255, 255);
+}
 
 /*Seccion del Footer*/
 
@@ -353,6 +442,11 @@ footer {
         left: 50px;
     }
 
+    .imgFondoC img {
+        width: 100%;
+        height: 400px;    
+    }
+
     .imgMobile1 {
         display: none;
     }
@@ -401,7 +495,16 @@ footer {
         padding: 0px;
         margin: auto;
         margin-bottom: 60px;
-    }    
+    }
+    
+    /*Seccion "Comentarios de los clientes" en preguntas.html*/
+
+    .card img {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+            
 
     /*Formulario*/
 
@@ -468,6 +571,11 @@ footer {
         display: none;
     }
 
+    .imgFondoC img {
+        width: 100%;
+        height: 200px;    
+    }
+
     .imgMobile1 {
         display: block;
     }
@@ -483,7 +591,7 @@ footer {
         grid-template-columns: 100%;
         grid-template-rows: repeat(2,1fr);
         justify-items: center;
-        height: 60vh;
+        height: 80vh;
     }
 
     .gridContenido {
@@ -491,7 +599,7 @@ footer {
         grid-template-columns: 100%;
         grid-template-rows: repeat(2,1fr);
         align-items: center;
-        height: 60vh;
+        height: 80vh;
     }
 
     .gridContenido4 {
@@ -499,7 +607,7 @@ footer {
         grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         text-align: justify;
-        height: 110vh;
+        height: 130vh;
         align-items: center;
     }
 
@@ -541,6 +649,26 @@ footer {
         height: 290px;
         width: 500;
     }
+
+    .marginBot {
+        margin-bottom: 20px;
+    }
+
+    /*Seccion anclado de relatos en galeria.html*/
+
+    .galeriaIntro .card img {
+        width: 160px;
+        height: 160px;   
+
+    }
+
+    /*Seccion "Comentarios de los clientes" en preguntas.html*/
+
+    .card img{
+    width: 200px;
+    height: 200px;
+    }
+    
     
     /*formulario*/
 
@@ -636,6 +764,7 @@ footer {
     .imgMobile1 img {
         width: 100%;
     }
+
     
     /*Contenido*/
 
@@ -644,7 +773,7 @@ footer {
         grid-template-columns: 100%;
         grid-template-rows: repeat(2,1fr);
         justify-items: center;
-        height: 60vh;
+        height: 80vh;
     }
 
     .gridContenido {
@@ -652,7 +781,7 @@ footer {
         grid-template-columns: 100%;
         grid-template-rows: repeat(2,1fr);
         align-items: center;
-        height: 60vh;
+        height: 80vh;
     }
 
     .gridContenido4 {
@@ -660,7 +789,7 @@ footer {
         grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         text-align: justify;
-        height: 110vh;
+        height: 120vh;
         align-items: center;
     }
 
@@ -731,6 +860,23 @@ footer {
         width: 280px;
     }    
     
+    /*Seccion anclado de relatos en galeria.html*/
+
+    .galeriaIntro .card img {
+        width: 100px;
+        height: 100px;   
+
+    }
+
+    /*Seccion "Comentarios de los clientes" en preguntas.html*/
+
+    .card img {
+    width: 160px;
+    height: 160px;
+    margin-top: 20px;
+    }
+    
+
     /*Formulario*/
 
     .formulario {
@@ -751,7 +897,7 @@ footer {
     /*footer*/
 
     footer {
-        margin-top: 0px;
+        margin-top: 20px;
     }
 
     .fMenu .fMenuT {
