@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Seccion del Menu Navegador*/
+
+.header {
+    background-color: rgb(2, 1, 1); 
+    height: 100%; 
+    padding: 1rem;
+    list-style-type: none  
+}
+.headerContenedor {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;   
+}
+
+.logo img {
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: auto;
+    position: relative;
+}
+
+.navItem {
+    margin-right: 20px;
+}      
+
+.navEnlace {
+    color: rgb(253, 0, 0);
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+}
+
+.navEnlace span{
+    color: rgb(255, 255, 255);
+}
+
+.imgFondoC img {
+    width: 100%;
+    height: 700px;    
+}
+
+.imgMobile1 {
+    display: none;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*Animacion NAV - Subrayado */
+
+nav ul a::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(226, 19, 19);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+nav ul li a:hover::after, h1:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

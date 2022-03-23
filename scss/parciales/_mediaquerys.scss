@@ -1,0 +1,509 @@
+/*----------Media Querys------------*/
+
+/*---------------------------Vista Tablet----------------------*/
+
+@media screen and (max-width: 1024px) {
+
+    /*Body*/
+
+    h1 {
+        font-size: 70px;
+    }
+    
+    h2 {
+        font-size: 60px;
+
+    }
+    
+    h3 {
+        font-size: 50px;
+
+          
+    }
+    
+    p {
+        font-size: 22px;
+    }
+    
+    ul {
+        font-size: 22px;
+    }
+
+    /*Menu*/
+
+    .headerContenedor {
+        align-items: justify;
+        flex-direction: column;
+    }
+
+    .nav{
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 50px;
+    }
+
+    .imgFondoC img {
+        width: 100%;
+        height: 400px;    
+    }
+
+    .imgMobile1 {
+        display: none;
+    }
+
+    /*contenido*/
+
+    .gridContenidoN {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,1fr);
+        justify-items: center;
+        height: 100%; 
+    }
+
+    .gridContenido {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,1fr);
+        justify-items: center;
+        height: 100%;    
+    }
+
+    .gridContenido4 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .orderUp {
+        order:1;
+    }
+
+    .imgderecha img, iframe {
+        height: 400px;
+        width: 600px;
+        padding: 0px;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+    
+    .imgizquierda img, iframe {
+        height: 400px;
+        width: 600px;
+        padding: 0px;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+    
+    /*Seccion "Comentarios de los clientes" en preguntas.html*/
+
+    .card img {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+            
+
+    /*Formulario*/
+
+    .formulario {
+        width: 90%;
+        height: 90%;
+    }
+
+}
+    /*-------------------- Vista Mobile 600px-------------------------*/
+
+@media screen and (max-width: 600px) {
+
+    /*Body*/
+   
+    h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: -10px;  
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    ul {
+        font-size: 16px;
+        line-height: 1.4;
+        text-align:justify;
+    }
+    
+    body h1,h2,h3 {
+        padding: 8px;
+    } 
+
+    /*Menu*/
+
+    .logo {
+        margin: auto;
+        height: 80px;
+        width: 80px;
+    }
+
+    .headerContenedor {
+        justify-items: center;
+    }    
+
+    .nav{
+        justify-content: center;
+        align-items: center;
+        margin: auto;  
+    }
+
+    .navItem a {
+        font-size: 20px;   
+    }
+
+    .imgFondoC {
+        display: none;
+    }
+
+    .imgFondoC img {
+        width: 100%;
+        height: 200px;    
+    }
+
+    .imgMobile1 {
+        display: block;
+    }
+
+    .imgMobile1 img {
+        width: 100%;
+    }
+    
+    /*Contenido*/
+
+    .gridContenidoN {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,1fr);
+        justify-items: center;
+        height: 80vh;
+    }
+
+    .gridContenido {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
+        height: 80vh;
+    }
+
+    .gridContenido4 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        text-align: justify;
+        height: 130vh;
+        align-items: center;
+    }
+
+    .orderUp {
+        order:1;
+    }
+
+   .centerTextD {
+       margin-top: 30px;
+   }
+
+    .bderecha, .bizquierda {
+        width: 450px;
+        height: 200px;   
+    }
+
+    .bderecha ul {
+        margin-top: 10px;   
+    }
+
+    .bizquierda ul {
+        margin-top: 10px;   
+    }
+
+    .imgderecha img, iframe {
+        height: 250px;
+        width: 450px;
+       margin-bottom: 10px; 
+        
+    }
+    
+    .imgizquierda img, iframe {
+        height: 250px;
+        width: 450px;
+        margin-bottom: 10px;
+    }    
+
+    .imgderecha, .imgizquierda {
+        height: 290px;
+        width: 500;
+    }
+
+    .marginBot {
+        margin-bottom: 20px;
+    }
+
+    /*Seccion anclado de relatos en galeria.html*/
+
+    .galeriaIntro .card img {
+        width: 160px;
+        height: 160px;   
+
+    }
+
+    /*Seccion "Comentarios de los clientes" en preguntas.html*/
+
+    .card img{
+    width: 200px;
+    height: 200px;
+    }
+    
+    
+    /*formulario*/
+
+    .formulario {
+        padding: 40px;
+    }
+    
+    input, textarea {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 20px;
+        margin: auto;
+        position: relative;
+        left: 25px;
+    }
+}
+        
+   /*-------------------- Vista Mobile 480px-------------------------*/
+
+   @media screen and (max-width: 480px) {
+
+    /*Body*/
+   
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: -10px;  
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    ul {
+        font-size: 14px;
+        line-height: 1.4;
+        text-align:justify;
+    }
+    
+    body h1,h2,h3 {
+        padding: 4px;
+    } 
+
+    /*Menu*/
+
+    .headerContenedor {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+
+    .headerContenedor div{
+        width: 50px;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+    
+    nav {
+        width: 125px;
+        justify-items: center;
+        
+    }
+    
+    .navItem a {
+        font-size: 16px; 
+        margin:0;  
+    }
+
+    .navItem li {
+        margin:auto;
+        text-align: center;
+    }
+
+    .imgFondoC {
+        display: none;
+    }
+
+    .imgMobile1 {
+        display: block;
+    }
+
+    .imgMobile1 img {
+        width: 100%;
+    }
+
+    
+    /*Contenido*/
+
+    .gridContenidoN {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,1fr);
+        justify-items: center;
+        height: 80vh;
+    }
+
+    .gridContenido {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
+        height: 80vh;
+    }
+
+    .gridContenido4 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        text-align: justify;
+        height: 120vh;
+        align-items: center;
+    }
+
+    .orderUp {
+        order:1;
+    }
+
+   .centerTextD {
+       margin-top: 30px;
+   }
+
+   .marginBot {
+       margin-bottom: 10px;
+   }
+
+   .marginConsulta p {
+       margin-left: 20px;
+       margin-right: 20px;
+       margin-bottom: 20px;
+   }
+
+    .bderecha, .bizquierda {
+        width: 280px;
+        height: 220px;   
+    }
+
+    .imgderecha, .imgizquierda {
+        height: 280px;
+        width: 220;
+    }
+
+    .bizquierda div{
+        width: 300px;
+        height: 100px;
+    }
+
+    .bderecha div{
+        width: 300px;
+        height: 100px;
+    }
+
+    .imgizquierda div{
+        width: 300px;
+        height: 60px;
+    }
+
+    .imgderecha div{
+        width: 300px;
+        height: 60px;
+    }
+
+    .bderecha ul {
+        margin-top: 20px;   
+    }
+
+    .bizquierda ul {
+        margin-top: 20px;   
+    }
+
+    .imgderecha img, iframe {
+        height: 200px;
+        width: 280px; 
+        
+    }
+    
+    .imgizquierda img, iframe {
+        height: 200px;
+        width: 280px;
+    }    
+    
+    /*Seccion anclado de relatos en galeria.html*/
+
+    .galeriaIntro .card img {
+        width: 100px;
+        height: 100px;   
+
+    }
+
+    /*Seccion "Comentarios de los clientes" en preguntas.html*/
+
+    .card img {
+    width: 160px;
+    height: 160px;
+    margin-top: 20px;
+    }
+    
+
+    /*Formulario*/
+
+    .formulario {
+        padding: 40px;
+    }
+    
+    input, textarea {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 18px;
+        margin: auto;
+        position: relative;
+        left: 25px;
+    }
+
+    /*footer*/
+
+    footer {
+        margin-top: 20px;
+    }
+
+    .fMenu .fMenuT {
+        height: 40px;
+        width: 40px;
+    }
+
+}   
