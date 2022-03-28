@@ -1,22 +1,21 @@
 /*Secciones de contenido*/
 
-.gridContenido {
+.gridContainerS {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 100%;
     justify-items: center;
     width: 100%;
     height: 60vh;
+}
+
+.gridContenido {
+    @extend .gridContainerS;
     background-color: rgb(255, 255, 255);
 }
 
 .gridContenidoN {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 100%;
-    justify-items: center;
-    width: 100%;
-    height: 60vh;
+    @extend .gridContainerS;
     background-color: rgb(0, 0, 0);
     color: white;
 }
@@ -52,17 +51,18 @@
 
 /* Los bloques derecha e izquierda*/
 
-.bderecha {
+.bloqueDI {
     height: 400px;
     width: 600px;
     padding: 10px; 
 }
 
+.bderecha {
+    @extend .bloqueDI;
+}
+
 .bizquierda {
-    height: 400px;
-    width: 600px;
-    padding: 10px;
-    
+    @extend .bloqueDI;
 }
 
 section .bderecha, .bizquierda{
@@ -76,26 +76,28 @@ section .bderecha, .bizquierda{
 
 /* Imagenes derecha e izquierda*/
 
+@mixin img--sizes ($height, $width, $padding, $margin) {
+    width: $width;
+    height: $height;
+    padding: $padding;
+    margin: $margin;
+}
+
 .imgderecha img, iframe {
-    height: 400px;
-    width: 600px;
-    padding: 50px;
-    margin: auto;
+    @include img--sizes(400px, 600px, 50px, auto)
 }
 
 .imgizquierda img, iframe {
-    height: 400px;
-    width: 600px;
-    padding: 50px;
-    margin: auto;
+    @include img--sizes(400px, 600px, 50px, auto)
 } 
 
-/*Seccion de Galeria*/
+/*Seccion anclaje de relatos en Galeria.html*/
 
 .galeriaIntro {
+
     display:flex ;
     flex-direction: row;
-    border-radius: 12px;
+
 }
 
 .galeriaIntro .card img{
@@ -120,6 +122,33 @@ section .bderecha, .bizquierda{
     color: white;
 }
 
+.container__play--center {
+    margin: auto;
+    text-align: center;
+
+}
+
+.container__play--center a {
+    width: 80%;
+
+}
+
+.play--center {
+    margin: auto;
+    font-size: 30px;
+    }
+
+
+
+.imgInterroga img {
+    width: 100%;
+    height: 600px;
+}
+
+ h4 p .card-text {
+    display: none;
+}
+    
 /*Seccion "Comentarios de los clientes" en preguntas.html*/
 
 .h2Coment {

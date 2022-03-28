@@ -17,8 +17,12 @@
     
     h3 {
         font-size: 50px;
+    
+    }
 
-          
+    h4 {
+        font-size: 30px;
+
     }
     
     p {
@@ -46,6 +50,11 @@
     .imgFondoC img {
         width: 100%;
         height: 400px;    
+    }
+
+    .imgInterroga img {
+        width: 100%;
+        height: 400px;
     }
 
     .imgMobile1 {
@@ -83,18 +92,12 @@
     }
 
     .imgderecha img, iframe {
-        height: 400px;
-        width: 600px;
-        padding: 0px;
-        margin: auto;
+        @include img--sizes(400px, 600px, 0px, auto);
         margin-bottom: 60px;
     }
     
     .imgizquierda img, iframe {
-        height: 400px;
-        width: 600px;
-        padding: 0px;
-        margin: auto;
+        @include img--sizes(400px, 600px, 0px, auto);
         margin-bottom: 60px;
     }
     
@@ -130,6 +133,10 @@
         font-size: 30px;
         text-align: center;
         margin-bottom: -10px;  
+    }
+
+    h4 {
+        font-size: 22px;
     }
     
     p {
@@ -174,7 +181,12 @@
 
     .imgFondoC img {
         width: 100%;
-        height: 200px;    
+        height: 300px;    
+    }
+    
+    .imgInterroga img {
+        width: 100%;
+        height: 200px;
     }
 
     .imgMobile1 {
@@ -234,15 +246,13 @@
     }
 
     .imgderecha img, iframe {
-        height: 250px;
-        width: 450px;
-       margin-bottom: 10px; 
+        @include img--sizes(250px, 450px, 0px, auto);
+        margin-bottom: 10px; 
         
     }
     
     .imgizquierda img, iframe {
-        height: 250px;
-        width: 450px;
+        @include img--sizes(250px, 450px, 0px, auto);
         margin-bottom: 10px;
     }    
 
@@ -305,6 +315,10 @@
         text-align: center;
         margin-bottom: -10px;  
     }
+
+    h4 {
+        font-size: 18px;
+    }
     
     p {
         font-size: 14px;
@@ -356,6 +370,11 @@
 
     .imgFondoC {
         display: none;
+    }
+
+    .imgInterroga img {
+        width: 100%;
+        height: 400px;
     }
 
     .imgMobile1 {
@@ -451,14 +470,11 @@
     }
 
     .imgderecha img, iframe {
-        height: 200px;
-        width: 280px; 
-        
+        @include img--sizes(200px, 280px, 0px, auto);  
     }
     
     .imgizquierda img, iframe {
-        height: 200px;
-        width: 280px;
+        @include img--sizes(200px, 280px, 0px, auto); 
     }    
     
     /*Seccion anclado de relatos en galeria.html*/

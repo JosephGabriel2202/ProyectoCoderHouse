@@ -8,21 +8,36 @@ body {
     text-align:justify;
 }
 
+$Hfont-size: (
+    grande: 80px,
+    mediano: 70px,
+    normals: 60px,
+    pequeno: 40px, 
+);
+
 h1 {
-    font-size: 80px;
+    font-size: map-get($Hfont-size, grande);
     text-align: center;
 }
 
 h2 {
-    font-size: 70px;
+    font-size: map-get($Hfont-size, mediano);
     text-align: center;
     color: $h2Color;
 }
 
 h3 {
-    font-size: 60px;
+    font-size: map-get($Hfont-size, normals);
     text-align: center;
     margin-bottom: 20px;
+      
+}
+
+h4 {
+    font-size: map-get($Hfont-size, pequeno);
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
       
 }
 
