@@ -35,16 +35,9 @@
 
     /*Menu*/
 
-    .headerContenedor {
-        align-items: justify;
-        flex-direction: column;
-    }
-
-    .nav{
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        left: 50px;
+    .navbar-brand img {
+    height: 110px;
+    width: 110px;
     }
 
     .imgFondoC img {
@@ -174,25 +167,10 @@
 
     /*Menu*/
 
-    .logo {
-        margin: auto;
-        height: 80px;
-        width: 80px;
-    }
-
-    .headerContenedor {
-        justify-items: center;
-    }    
-
-    .nav{
-        justify-content: center;
-        align-items: center;
-        margin: auto;  
-    }
-
-    .navItem a {
-        font-size: 20px;   
-    }
+    .navbar-brand img {
+        height: 100px;
+        width: 100px;
+        }
 
    .imgFondoC img {
         width: 100%;
@@ -361,6 +339,11 @@
     } 
 
     /*Menu*/
+
+    .navbar-brand img {
+        height: 80px;
+        width: 80px;
+        }
 
     .imgFondoC img {
 
