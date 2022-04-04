@@ -476,6 +476,10 @@ footer {
     text-align: justify;
     height: 130vh;
     align-items: center; }
+  .gridContenidoN iframe {
+    margin-top: 60px; }
+  .gridContenido iframe {
+    margin-top: 60px; }
   .orderUp {
     order: 1; }
   .centerTextD {
@@ -580,6 +584,10 @@ footer {
     text-align: justify;
     height: 120vh;
     align-items: center; }
+  .gridContenidoN iframe {
+    margin-top: 20px; }
+  .gridContenido iframe {
+    margin-top: 20px; }
   .orderUp {
     order: 1; }
   .centerTextD {
