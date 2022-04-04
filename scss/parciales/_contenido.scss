@@ -1,5 +1,11 @@
 /*Secciones de contenido*/
 
+
+
+.navbar-brand img {
+    border-radius: 100px;
+}
+
 .gridContainerS {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -19,6 +25,15 @@
     background-color: rgb(0, 0, 0);
     color: white;
 }
+
+.gridContenidoN iframe {
+    margin-top: 160px;
+}
+
+.gridContenido iframe {
+    margin-top: 160px;
+}
+
 
 .gridContenido4 {
     display: grid;
@@ -93,60 +108,26 @@ section .bderecha, .bizquierda{
 
 /*Seccion anclaje de relatos en Galeria.html*/
 
-.galeriaIntro {
-
-    display:flex ;
-    flex-direction: row;
-
-}
-
-.galeriaIntro .card img{
-    height:100%;
-    width:100%; 
-}
-
-.galeriaIntro .card{
-    background-color: rgb(0, 0, 0);
-    color: white;
-
-}
-
-.btn-primary {
-    background-color: white;
-    color:black;
-    border-color: black;
-}
-
-.btn-primary:hover {
-    background-color: red;
-    color: white;
-}
-
-.container__play--center {
-    margin: auto;
-    text-align: center;
-
-}
-
-.container__play--center a {
-    width: 80%;
-
-}
-
-.play--center {
-    margin: auto;
-    font-size: 30px;
-    }
-
-
-
-.imgInterroga img {
-    width: 100%;
+.img_Relatos img {
     height: 600px;
+    width: 100%;
+    padding: 40px;
+    margin: auto;
 }
 
-h4 p .card-text {
-    display: none;
+.img_selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.img_selector img {
+    height: 200px;
+    width: 220px;
+    border-radius: 100px;
 }
     
 /*Seccion "Comentarios de los clientes" en preguntas.html*/
