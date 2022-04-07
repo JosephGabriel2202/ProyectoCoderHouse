@@ -114,7 +114,8 @@ body h1, h2, h3 {
   grid-template-rows: 100%;
   justify-items: center;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: 520px; }
 
 .gridContenido {
   background-color: white; }
@@ -135,7 +136,9 @@ body h1, h2, h3 {
   grid-template-rows: 1fr 1fr;
   justify-items: center;
   text-align: justify;
-  width: 100%; }
+  min-width: 580px;
+  min-height: 520px;
+  overflow: hidden; }
 
 .bConsultas {
   width: 90%;
@@ -156,7 +159,7 @@ body h1, h2, h3 {
 /* Los bloques derecha e izquierda*/
 .bloqueDI, .bderecha, .bizquierda {
   height: 400px;
-  width: 600px;
+  width: 570px;
   padding: 10px; }
 
 section .bderecha, .bizquierda {
@@ -439,20 +442,24 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
-    overflow: hidden; }
+    overflow: hidden;
+    min-height: 700px; }
   .gridContenido {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
-    overflow: hidden; }
+    overflow: hidden;
+    min-height: 700px; }
   .gridContenido4 {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     text-align: justify;
     align-items: center;
-    overflow: hidden; }
+    overflow: hidden;
+    min-width: 480px;
+    min-height: 700px; }
   .gridContenidoN iframe {
     margin-top: 60px; }
   .gridContenido iframe {
@@ -549,20 +556,24 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
-    overflow: hidden; }
+    overflow: hidden;
+    min-height: 740px; }
   .gridContenido {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
-    overflow: hidden; }
+    overflow: hidden;
+    min-height: 740px; }
   .gridContenido4 {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     text-align: justify;
     overflow: hidden;
-    align-items: center; }
+    align-items: center;
+    min-height: 740px;
+    min-width: 320px; }
   .gridContenidoN iframe {
     margin-top: 60px; }
   .gridContenido iframe {

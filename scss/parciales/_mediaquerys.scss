@@ -76,6 +76,7 @@
         text-align: justify;
         width: 100%;
         overflow: hidden;
+
     }
 
     .orderUp {
@@ -188,6 +189,7 @@
         grid-template-rows: repeat(2,1fr);
         justify-items: center;
         overflow: hidden;
+        min-height: 700px;
     }
 
     .gridContenido {
@@ -196,6 +198,7 @@
         grid-template-rows: repeat(2,1fr);
         align-items: center;
         overflow: hidden;
+        min-height: 700px;
     }
 
     .gridContenido4 {
@@ -205,6 +208,9 @@
         text-align: justify;
         align-items: center;
         overflow: hidden;
+        min-width: 480px;
+        min-height: 700px;
+        
     }
 
     .gridContenidoN iframe {
@@ -363,6 +369,7 @@
         grid-template-rows: repeat(2,1fr);
         justify-items: center;
         overflow: hidden;
+        min-height: 740px;
     }
 
     .gridContenido {
@@ -371,6 +378,7 @@
         grid-template-rows: repeat(2,1fr);
         align-items: center;
         overflow: hidden;
+        min-height: 740px;
     }
 
     .gridContenido4 {
@@ -380,6 +388,8 @@
         text-align: justify;
         overflow: hidden;
         align-items: center;
+        min-height: 740px;
+        min-width: 320px;
     }
 
     .gridContenidoN iframe {
