@@ -12,6 +12,7 @@
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 100%;
     justify-items: center;
+    align-items: center;
     width: 100%;
     overflow: hidden;
     min-height: 520px;
@@ -43,6 +44,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
+    align-items: center;
     text-align: justify;
     min-width: 580px;
     min-height: 520px;
@@ -72,8 +74,8 @@
 /* Los bloques derecha e izquierda*/
 
 .bloqueDI {
-    height: 400px;
-    width: 570px;
+    max-height: 400px;
+    max-width: 570px;
     padding: 10px; 
 }
 
@@ -114,10 +116,18 @@ section .bderecha, .bizquierda{
 /*Seccion anclaje de relatos en Galeria.html*/
 
 .img_Relatos img {
-    height: 600px;
-    width: 100%;
+    height: 900px;
+    width: 900px;
     padding: 40px;
-    margin: auto;
+    border-radius: 450px;
+}
+
+.img_Relatos-Flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .img_selector {
@@ -126,7 +136,7 @@ section .bderecha, .bizquierda{
     justify-content: center;
     gap: 2rem;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .img_selector img {
@@ -134,7 +144,45 @@ section .bderecha, .bizquierda{
     width: 220px;
     border-radius: 100px;
 }
-    
+
+.bCenter {
+    max-height: 420px;
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+}
+
+.bCenter_Top {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.img_Relatos h3 {
+    margin-top: 4%;
+}
+
+.img_Relatos a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.Backblack {
+
+    background-color: rgba(75, 0, 0, 0.4);
+}
+
+.Backgrey {
+
+    background-color: rgba(59, 34, 29, 0.4);
+
+}
+
+.Backwhite {
+
+    background-color: rgba(107, 73, 151, 0.397);
+
+}
+
 /*Seccion "Comentarios de los clientes" en preguntas.html*/
 
 .h2Coment {

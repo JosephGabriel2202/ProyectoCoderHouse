@@ -45,10 +45,6 @@
         height: 500px;    
     }
 
-        .imgMobile1 {
-        display: none;
-    }
-
     /*contenido*/
 
     .gridContenidoN {
@@ -71,7 +67,7 @@
 
     .gridContenido4 {
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 100%; 
         grid-template-rows: 1fr 1fr 1fr 1fr;
         text-align: justify;
         width: 100%;
@@ -96,10 +92,10 @@
     /*Seccion anclado de relatos en galeria.html*/
 
     .img_Relatos img {
-        height: 400px;
-        width: 100%;
-        padding: 40px;
-        margin: auto;
+            height: 600px;
+            width: 600px;
+            padding: 40px;
+            border-radius: 300px;
     }
     
     .img_selector {
@@ -115,6 +111,8 @@
         height: 120px;
         width: 140px;
         border-radius: 100px;
+
+    
     }
     
     /*Seccion "Comentarios de los clientes" en preguntas.html*/
@@ -143,12 +141,13 @@
     h2 {
         font-size: 40px;
         text-align: center;
+        margin-bottom: 10px;
     }
     
     h3 {
         font-size: 30px;
         text-align: center;
-        margin-bottom: 30px;  
+        margin-bottom: 10px;  
     }
 
     h4 {
@@ -178,7 +177,7 @@
 
    .imgFondoC img {
         width: 100%;
-        height: 400px;    
+        height: 380px;    
     }
     
     /*Contenido*/
@@ -197,6 +196,7 @@
         grid-template-columns: 100%;
         grid-template-rows: repeat(2,1fr);
         align-items: center;
+        justify-content: center;
         overflow: hidden;
         min-height: 700px;
     }
@@ -206,6 +206,7 @@
         grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         text-align: justify;
+        justify-content: center;
         align-items: center;
         overflow: hidden;
         min-width: 480px;
@@ -213,25 +214,19 @@
         
     }
 
-    .gridContenidoN iframe {
-        margin-top: 60px;
-    }
-    
-    .gridContenido iframe {
-        margin-top: 60px;
-    }
+
     
     .orderUp {
         order:1;
     }
 
    .centerTextD {
-       margin-top: 30px;
+       margin-top: 10px;
    }
 
     .bderecha, .bizquierda {
-        width: 450px;
-        height: 200px;   
+        max-width: 460px;
+        max-height: 280px;   
     }
 
     .bderecha ul {
@@ -254,8 +249,8 @@
     }    
 
     .imgderecha, .imgizquierda {
-        height: 290px;
-        width: 500;
+        max-height: 500px;
+        max-width: 500px;
     }
 
     .marginBot {
@@ -265,10 +260,10 @@
     /*Seccion anclado de relatos en galeria.html*/
 
     .img_Relatos img {
-        height: 240px;
-        width: 100%;
+        height: 480px;
+        width: 480px;
         padding: 40px;
-        margin: auto;
+        border-radius: 240px;
     }
     
     .img_selector {
@@ -284,6 +279,13 @@
         height: 80px;
         width: 100px;
         border-radius: 100px;
+    }
+
+    .bCenter {
+        width: 90%;
+        max-height: 500px;
+        padding: 10px;
+        margin: auto;
     }
 
     /*Seccion "Comentarios de los clientes" en preguntas.html*/
@@ -356,7 +358,7 @@
 
     .imgFondoC img {
 
-    height: 300px;
+    height: 240px;
     width: 100%;
     }
 
@@ -419,8 +421,8 @@
    }
 
     .bderecha, .bizquierda {
-        width: 280px;
-        height: 220px;   
+        max-width: 280px;
+        max-height: 300px;   
     }
 
     .imgderecha, .imgizquierda {
@@ -467,10 +469,20 @@
     /*Seccion anclado de relatos en galeria.html*/
 
     .img_Relatos img{
-    height: 150px;
-    width: 80%;
-    padding: 10px;
-    margin: auto;
+        height: 320px;
+        width: 320px;
+        padding: 40px;
+        border-radius: 160px;
+    }
+
+    .img_selector img {
+        height: 80px;
+        width: 80px;
+        border-radius: 100px;
+    }
+
+    .bCenter {
+        width: 90%;
     }
 
     /*Seccion "Comentarios de los clientes" en preguntas.html*/

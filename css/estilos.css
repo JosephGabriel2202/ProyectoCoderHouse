@@ -81,7 +81,7 @@ h2 {
 h3 {
   font-size: 60px;
   text-align: center;
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
 
 h4 {
   font-size: 40px;
@@ -113,6 +113,7 @@ body h1, h2, h3 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 100%;
   justify-items: center;
+  align-items: center;
   width: 100%;
   overflow: hidden;
   min-height: 520px; }
@@ -135,6 +136,7 @@ body h1, h2, h3 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
+  align-items: center;
   text-align: justify;
   min-width: 580px;
   min-height: 520px;
@@ -158,8 +160,8 @@ body h1, h2, h3 {
 
 /* Los bloques derecha e izquierda*/
 .bloqueDI, .bderecha, .bizquierda {
-  height: 400px;
-  width: 570px;
+  max-height: 400px;
+  max-width: 570px;
   padding: 10px; }
 
 section .bderecha, .bizquierda {
@@ -184,10 +186,16 @@ section .bderecha, .bizquierda {
 
 /*Seccion anclaje de relatos en Galeria.html*/
 .img_Relatos img {
-  height: 600px;
-  width: 100%;
+  height: 900px;
+  width: 900px;
   padding: 40px;
-  margin: auto; }
+  border-radius: 450px; }
+
+.img_Relatos-Flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
 .img_selector {
   display: flex;
@@ -195,12 +203,38 @@ section .bderecha, .bizquierda {
   justify-content: center;
   gap: 2rem;
   padding: 20px;
-  margin-top: 40px; }
+  margin-top: 10px; }
 
 .img_selector img {
   height: 200px;
   width: 220px;
   border-radius: 100px; }
+
+.bCenter {
+  max-height: 420px;
+  width: 70%;
+  padding: 10px;
+  margin: auto; }
+
+.bCenter_Top {
+  margin-top: 4%;
+  margin-bottom: 4%; }
+
+.img_Relatos h3 {
+  margin-top: 4%; }
+
+.img_Relatos a {
+  text-decoration: none;
+  color: #000000; }
+
+.Backblack {
+  background-color: rgba(75, 0, 0, 0.4); }
+
+.Backgrey {
+  background-color: rgba(59, 34, 29, 0.4); }
+
+.Backwhite {
+  background-color: rgba(107, 73, 151, 0.397); }
 
 /*Seccion "Comentarios de los clientes" en preguntas.html*/
 .h2Coment {
@@ -344,8 +378,6 @@ footer {
   .imgFondoC img {
     width: 100%;
     height: 500px; }
-  .imgMobile1 {
-    display: none; }
   /*contenido*/
   .gridContenidoN {
     display: grid;
@@ -384,10 +416,10 @@ footer {
     margin-bottom: 60px; }
   /*Seccion anclado de relatos en galeria.html*/
   .img_Relatos img {
-    height: 400px;
-    width: 100%;
+    height: 600px;
+    width: 600px;
     padding: 40px;
-    margin: auto; }
+    border-radius: 300px; }
   .img_selector {
     display: flex;
     flex-direction: row;
@@ -414,11 +446,12 @@ footer {
   /*Body*/
   h2 {
     font-size: 40px;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 10px; }
   h3 {
     font-size: 30px;
     text-align: center;
-    margin-bottom: 30px; }
+    margin-bottom: 10px; }
   h4 {
     font-size: 22px; }
   p {
@@ -435,7 +468,7 @@ footer {
     width: 100px; }
   .imgFondoC img {
     width: 100%;
-    height: 400px; }
+    height: 380px; }
   /*Contenido*/
   .gridContenidoN {
     display: grid;
@@ -449,6 +482,7 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
+    justify-content: center;
     overflow: hidden;
     min-height: 700px; }
   .gridContenido4 {
@@ -456,21 +490,18 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     text-align: justify;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
     min-width: 480px;
     min-height: 700px; }
-  .gridContenidoN iframe {
-    margin-top: 60px; }
-  .gridContenido iframe {
-    margin-top: 60px; }
   .orderUp {
     order: 1; }
   .centerTextD {
-    margin-top: 30px; }
+    margin-top: 10px; }
   .bderecha, .bizquierda {
-    width: 450px;
-    height: 200px; }
+    max-width: 460px;
+    max-height: 280px; }
   .bderecha ul {
     margin-top: 10px; }
   .bizquierda ul {
@@ -488,16 +519,16 @@ footer {
     margin: auto;
     margin-bottom: 10px; }
   .imgderecha, .imgizquierda {
-    height: 290px;
-    width: 500; }
+    max-height: 500px;
+    max-width: 500px; }
   .marginBot {
     margin-bottom: 20px; }
   /*Seccion anclado de relatos en galeria.html*/
   .img_Relatos img {
-    height: 240px;
-    width: 100%;
+    height: 480px;
+    width: 480px;
     padding: 40px;
-    margin: auto; }
+    border-radius: 240px; }
   .img_selector {
     display: flex;
     flex-direction: row;
@@ -509,6 +540,11 @@ footer {
     height: 80px;
     width: 100px;
     border-radius: 100px; }
+  .bCenter {
+    width: 90%;
+    max-height: 500px;
+    padding: 10px;
+    margin: auto; }
   /*Seccion "Comentarios de los clientes" en preguntas.html*/
   .card img {
     width: 200px;
@@ -548,7 +584,7 @@ footer {
     height: 80px;
     width: 80px; }
   .imgFondoC img {
-    height: 300px;
+    height: 240px;
     width: 100%; }
   /*Contenido*/
   .gridContenidoN {
@@ -589,8 +625,8 @@ footer {
     margin-right: 20px;
     margin-bottom: 20px; }
   .bderecha, .bizquierda {
-    width: 280px;
-    height: 220px; }
+    max-width: 280px;
+    max-height: 300px; }
   .imgderecha, .imgizquierda {
     height: 280px;
     width: 220; }
@@ -622,10 +658,16 @@ footer {
     margin: auto; }
   /*Seccion anclado de relatos en galeria.html*/
   .img_Relatos img {
-    height: 150px;
-    width: 80%;
-    padding: 10px;
-    margin: auto; }
+    height: 320px;
+    width: 320px;
+    padding: 40px;
+    border-radius: 160px; }
+  .img_selector img {
+    height: 80px;
+    width: 80px;
+    border-radius: 100px; }
+  .bCenter {
+    width: 90%; }
   /*Seccion "Comentarios de los clientes" en preguntas.html*/
   .card img {
     width: 160px;
