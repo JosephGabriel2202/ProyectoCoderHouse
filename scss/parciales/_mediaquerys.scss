@@ -445,6 +445,10 @@
         min-width: 320px;
     }
 
+    .closeList {
+        padding-left: -64px;
+    }
+
 
     .orderUp {
         order:1;
@@ -554,7 +558,11 @@
     .section_Size {
         margin-top: 40px;
         margin-bottom: 40px;
-        height: 560px;
+        height: 500px;
+    }
+
+    #accordionFlushExample {
+        width: 90%;
     }
 
 

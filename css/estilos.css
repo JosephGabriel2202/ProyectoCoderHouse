@@ -96,7 +96,8 @@ ul {
   font-size: 24px;
   line-height: 1.4;
   text-align: justify;
-  list-style: none; }
+  list-style: none;
+  padding-left: -2rem !important; }
 
 body h1, h2, h3 {
   padding: 10px; }
@@ -154,10 +155,6 @@ body h1, h2, h3 {
 
 section .bderecha, .bizquierda {
   margin: auto; }
-
-.closeList {
-  line-height: 0.8;
-  margin-top: 30px; }
 
 .flexDoble {
   display: flex;
@@ -678,6 +675,8 @@ footer {
     align-items: center;
     min-height: 740px;
     min-width: 320px; }
+  .closeList {
+    padding-left: -64px; }
   .orderUp {
     order: 1; }
   .centerTextD {
@@ -749,7 +748,9 @@ footer {
   .section_Size {
     margin-top: 40px;
     margin-bottom: 40px;
-    height: 560px; }
+    height: 500px; }
+  #accordionFlushExample {
+    width: 90%; }
   /*Seccion "Comentarios de los clientes" en preguntas.html*/
   .card img {
     width: 160px;
