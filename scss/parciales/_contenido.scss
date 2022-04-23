@@ -51,20 +51,7 @@
     overflow: hidden;
 }
 
-.bConsultas {
-    width: 90%;
-    margin: auto;
-}
 
-.notCenter h3 {
-    text-align: justify;
-}
-
-.marginConsulta p{
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 40px;
-} 
 
 .titleSpace {
     margin-top: 60px;
@@ -95,6 +82,14 @@ section .bderecha, .bizquierda{
     line-height: 0.8;
     margin-top: 30px;
 }
+
+.flexDoble {
+    display: flex;
+    flex-direction: row;
+    max-height: 600px;
+    max-width: 600px;
+}
+
 
 /* Imagenes derecha e izquierda*/
 
@@ -199,7 +194,7 @@ section .bderecha, .bizquierda{
 
 .col-md-4 .card {
     margin-top: 30px;
-    border-radius: 7px;
+    border-radius: 20px;
     border-color: black;
     color: white;
     background-color: black;
@@ -246,32 +241,61 @@ textarea {
 .button {
     background-color: white;
     color: black;
-    width: 40%;
-    height: 60px;
+    width: 20%;
+    height: 40px;
     box-sizing: border-box;
     margin-top: 10px;
-    margin-left: 32%;
-    font-size: 30px;
+    margin-left: 20%;
+    font-size: 24px;
     font-family: 'quintessential','arial narrow';
-    }
+}
 
 
+/*Seccion Consulta tu duda*/
+
+.hidden {
+    overflow: hidden;
+    background-color: rgba(59, 34, 29, 0.4);
+}
+
+.notCenter{
+    display: flex;
+    flex-direction: row;
+    max-height: 600px;
+    max-width: 1200px;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin: auto;
+}
+
+.notCenter h3 {
+    text-align: center;
+}
+
+.marginConsulta {
+    max-height: 600px;
+    max-width: 600px;
+    padding: 1rem;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+    
 /*"Descarga nuestros cupones" en contactos.html*/
 
-.marginD {
+.marginD h2{
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 #accordionFlushExample {
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
 .accordion-item {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    border: 10px;
-    
+    border: 10px;    
 }
 
 .accordion-header button {
@@ -283,9 +307,23 @@ textarea {
     color: #ffffff;
     background-color: rgb(0, 0, 0);
     border-color: black;
-    
 }
 
 .accordion-body {
     background-color: rgb(255, 255, 255);
+}
+
+.section_Size {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 680px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(107, 73, 151, 0.397);
+}
+
+.section_Size2 {
+    height: 600px;
+    background-color: rgba(75, 0, 0, 0.4);
+
 }
